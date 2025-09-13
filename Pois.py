@@ -108,8 +108,221 @@ POIS_BY_STATE = {
             {"name":"Metropolitan Building", "lat":22.5678, "lon":88.3506, "duration":0.5,
              "description":"Colonial-style building at Esplanade, now housing shops.",
              "tags":["historical","cultural"],
-             "image": placeholder_image_url("Metropolitan Building Kolkata")}
-        ],
+             "image": placeholder_image_url("Metropolitan Building Kolkata")},
+             {"name":"Salt Lake Stadium", "lat":22.5684, "lon":88.4139, "duration":1.5,
+     "description":"One of the largest football stadiums in the world.",
+     "tags":["family","historical"],
+     "image": placeholder_image_url("Salt Lake Stadium Kolkata")},
+    
+    {"name":"Shobhabazar Rajbari", "lat":22.5996, "lon":88.3683, "duration":1.0,
+     "description":"18th-century palace known for its Durga Puja celebrations.",
+     "tags":["historical","cultural"],
+     "image": placeholder_image_url("Shobhabazar Rajbari Kolkata")},
+    
+    {"name":"Botanical Garden (Acharya Jagadish Chandra Bose Garden)", "lat":22.5371, "lon":88.2776, "duration":2.0,
+     "description":"Historic garden with a giant Banyan Tree and rare plant species.",
+     "tags":["relaxation","family","nature"],
+     "image": placeholder_image_url("Botanical Garden Kolkata")},
+    
+    {"name":"National Library of India", "lat":22.5351, "lon":88.3428, "duration":1.5,
+     "description":"India’s largest library with a massive collection of books and manuscripts.",
+     "tags":["cultural","historical"],
+     "image": placeholder_image_url("National Library Kolkata")},
+    
+    {"name":"Aquatica Water Park", "lat":22.5647, "lon":88.4826, "duration":3.0,
+     "description":"Popular water park with slides, pools, and wave rides.",
+     "tags":["family","adventure","relaxation"],
+     "image": placeholder_image_url("Aquatica Water Park Kolkata")},
+    
+    {"name":"Birla Industrial & Technological Museum", "lat":22.5421, "lon":88.3637, "duration":2.0,
+     "description":"Interactive science and technology museum for children and adults.",
+     "tags":["family","educational"],
+     "image": placeholder_image_url("Birla Industrial Technological Museum Kolkata")},
+    
+    {"name":"Park Street", "lat":22.5526, "lon":88.3514, "duration":2.0,
+     "description":"Famous nightlife and dining hub of Kolkata.",
+     "tags":["cultural","romantic","family"],
+     "image": placeholder_image_url("Park Street Kolkata")},
+    
+    {"name":"New Market (Hogg Market)", "lat":22.5603, "lon":88.3521, "duration":2.0,
+     "description":"Colonial-era marketplace for clothes, food, and handicrafts.",
+     "tags":["shopping","cultural"],
+     "image": placeholder_image_url("New Market Kolkata")},
+    
+    {"name":"Quest Mall", "lat":22.5393, "lon":88.3650, "duration":2.0,
+     "description":"Modern luxury shopping mall with international brands and dining.",
+     "tags":["shopping","family"],
+     "image": placeholder_image_url("Quest Mall Kolkata")},
+    
+    {"name":"Millennium Park", "lat":22.5718, "lon":88.3493, "duration":1.5,
+     "description":"Riverside park with gardens, rides, and Hooghly River views.",
+     "tags":["family","romantic","relaxation"],
+     "image": placeholder_image_url("Millennium Park Kolkata")},
+    
+    {"name":"Swami Vivekananda’s Ancestral House", "lat":22.5851, "lon":88.3630, "duration":1.5,
+     "description":"Birthplace and museum dedicated to Swami Vivekananda.",
+     "tags":["spiritual","historical"],
+     "image": placeholder_image_url("Swami Vivekananda House Kolkata")},
+    
+    {"name":"Rabindra Sarobar Lake", "lat":22.5146, "lon":88.3465, "duration":1.5,
+     "description":"Serene artificial lake surrounded by gardens and walking paths.",
+     "tags":["relaxation","romantic","family"],
+     "image": placeholder_image_url("Rabindra Sarobar Lake Kolkata")},
+    
+    {"name":"Shaheed Minar", "lat":22.5675, "lon":88.3518, "duration":0.5,
+     "description":"Historic monument originally built in memory of Major-General Ochterlony.",
+     "tags":["historical","cultural"],
+     "image": placeholder_image_url("Shaheed Minar Kolkata")},
+    
+    {"name":"Science College Observatory", "lat":22.5628, "lon":88.3712, "duration":1.0,
+     "description":"Astronomical observatory for public stargazing and education.",
+     "tags":["educational","family"],
+     "image": placeholder_image_url("Science College Observatory Kolkata")},
+    
+    {"name":"Mother’s Wax Museum", "lat":22.6036, "lon":88.4650, "duration":1.5,
+     "description":"Wax museum featuring life-size statues of global icons and celebrities.",
+     "tags":["family","cultural"],
+     "image": placeholder_image_url("Mother’s Wax Museum Kolkata")},
+     {"name":"St. John’s Church", "lat":22.5702, "lon":88.3486, "duration":1.0,
+     "description":"18th-century church with colonial architecture and historic tombs.",
+     "tags":["historical","spiritual"],
+     "image": placeholder_image_url("St. John’s Church Kolkata")},
+
+    {"name":"Armenian Church of the Holy Nazareth", "lat":22.5748, "lon":88.3517, "duration":1.0,
+     "description":"One of the oldest churches in Kolkata, dating back to 1724.",
+     "tags":["historical","spiritual"],
+     "image": placeholder_image_url("Armenian Church Kolkata")},
+
+    {"name":"Mallick Ghat Flower Market", "lat":22.5853, "lon":88.3508, "duration":1.0,
+     "description":"Bustling wholesale flower market near Howrah Bridge.",
+     "tags":["cultural","shopping"],
+     "image": placeholder_image_url("Mallick Ghat Flower Market Kolkata")},
+
+    {"name":"Sealdah Market", "lat":22.5672, "lon":88.3744, "duration":1.0,
+     "description":"Traditional market for daily essentials, food, and textiles.",
+     "tags":["shopping","cultural"],
+     "image": placeholder_image_url("Sealdah Market Kolkata")},
+
+    {"name":"Dakshineswar Ghat", "lat":22.6535, "lon":88.3579, "duration":1.0,
+     "description":"Sacred riverside ghat near Dakshineswar Kali Temple.",
+     "tags":["spiritual","relaxation"],
+     "image": placeholder_image_url("Dakshineswar Ghat Kolkata")},
+
+    {"name":"Princep Memorial", "lat":22.5467, "lon":88.3347, "duration":0.5,
+     "description":"Colonial memorial dedicated to James Prinsep near the riverbank.",
+     "tags":["historical","romantic"],
+     "image": placeholder_image_url("Princep Memorial Kolkata")},
+
+    {"name":"James Prinsep House", "lat":22.5465, "lon":88.3345, "duration":0.5,
+     "description":"Historic riverside pavilion popular for evening walks.",
+     "tags":["relaxation","romantic"],
+     "image": placeholder_image_url("James Prinsep House Kolkata")},
+
+    {"name":"Raj Bhavan", "lat":22.5697, "lon":88.3505, "duration":1.0,
+     "description":"Official residence of the Governor of West Bengal, built in 1803.",
+     "tags":["historical","cultural"],
+     "image": placeholder_image_url("Raj Bhavan Kolkata")},
+
+    {"name":"General Post Office (GPO)", "lat":22.5712, "lon":88.3500, "duration":0.5,
+     "description":"Iconic colonial-era building with a grand dome and Corinthian pillars.",
+     "tags":["historical","cultural"],
+     "image": placeholder_image_url("General Post Office Kolkata")},
+
+    {"name":"Writers’ Building", "lat":22.5732, "lon":88.3522, "duration":0.5,
+     "description":"Historic red building, former secretariat of West Bengal government.",
+     "tags":["historical","cultural"],
+     "image": placeholder_image_url("Writers’ Building Kolkata")},
+
+    {"name":"Bankshall Court", "lat":22.5736, "lon":88.3530, "duration":0.5,
+     "description":"Colonial-era court building representing British architecture.",
+     "tags":["historical","cultural"],
+     "image": placeholder_image_url("Bankshall Court Kolkata")},
+
+    {"name":"Metcalfe Hall", "lat":22.5699, "lon":88.3507, "duration":1.0,
+     "description":"19th-century building inspired by Greek temple architecture.",
+     "tags":["historical","cultural"],
+     "image": placeholder_image_url("Metcalfe Hall Kolkata")},
+
+    {"name":"Town Hall Museum", "lat":22.5673, "lon":88.3470, "duration":1.0,
+     "description":"Museum inside colonial Town Hall showcasing Kolkata’s history.",
+     "tags":["historical","cultural"],
+     "image": placeholder_image_url("Town Hall Museum Kolkata")},
+
+    {"name":"Raja Rammohan Roy Memorial Museum", "lat":22.5609, "lon":88.3661, "duration":1.0,
+     "description":"Memorial dedicated to the social reformer Raja Rammohan Roy.",
+     "tags":["historical","cultural"],
+     "image": placeholder_image_url("Raja Rammohan Roy Memorial Museum Kolkata")},
+
+    {"name":"Tagore’s Statue (College Street)", "lat":22.5750, "lon":88.3640, "duration":0.5,
+     "description":"Famous statue of Rabindranath Tagore at College Street.",
+     "tags":["historical","cultural"],
+     "image": placeholder_image_url("Tagore Statue Kolkata")},
+
+    {"name":"Chowringhee", "lat":22.5556, "lon":88.3523, "duration":1.0,
+     "description":"Bustling district with shops, hotels, and colonial-era buildings.",
+     "tags":["cultural","shopping"],
+     "image": placeholder_image_url("Chowringhee Kolkata")},
+
+    {"name":"Maidan", "lat":22.5564, "lon":88.3522, "duration":2.0,
+     "description":"Vast urban park known as the ‘lungs of Kolkata’.",
+     "tags":["relaxation","family"],
+     "image": placeholder_image_url("Maidan Kolkata")},
+
+    {"name":"Race Course", "lat":22.5453, "lon":88.3480, "duration":1.0,
+     "description":"Historic horse racing venue near Maidan.",
+     "tags":["cultural","relaxation"],
+     "image": placeholder_image_url("Race Course Kolkata")},
+
+    {"name":"Fort William", "lat":22.5545, "lon":88.3421, "duration":1.5,
+     "description":"18th-century fort built by the British, now under Indian Army.",
+     "tags":["historical","cultural"],
+     "image": placeholder_image_url("Fort William Kolkata")},
+
+    {"name":"Elliot Park", "lat":22.5487, "lon":88.3525, "duration":1.0,
+     "description":"Popular green park with walking paths and lawns.",
+     "tags":["relaxation","family"],
+     "image": placeholder_image_url("Elliot Park Kolkata")},
+
+    {"name":"Shrine Basilica of the Holy Rosary (Bandel Church)", "lat":22.9253, "lon":88.3759, "duration":2.0,
+     "description":"One of the oldest Christian churches in West Bengal, built by Portuguese.",
+     "tags":["spiritual","historical"],
+     "image": placeholder_image_url("Bandel Church Kolkata")},
+
+    {"name":"Chintamoni Kar Bird Sanctuary", "lat":22.4178, "lon":88.4195, "duration":2.0,
+     "description":"Sanctuary known for birdwatching and lush greenery.",
+     "tags":["nature","relaxation"],
+     "image": placeholder_image_url("Chintamoni Kar Bird Sanctuary Kolkata")},
+
+    {"name":"Nazrul Mancha", "lat":22.5209, "lon":88.3645, "duration":1.5,
+     "description":"Open-air auditorium for cultural shows and concerts.",
+     "tags":["cultural","family"],
+     "image": placeholder_image_url("Nazrul Mancha Kolkata")},
+
+    {"name":"Academy of Fine Arts", "lat":22.5434, "lon":88.3490, "duration":1.5,
+     "description":"Cultural center showcasing art exhibitions and performances.",
+     "tags":["cultural","family"],
+     "image": placeholder_image_url("Academy of Fine Arts Kolkata")},
+
+    {"name":"Birla Academy of Art & Culture", "lat":22.5369, "lon":88.3646, "duration":1.5,
+     "description":"Art museum housing Indian and international collections.",
+     "tags":["cultural","historical"],
+     "image": placeholder_image_url("Birla Academy of Art and Culture Kolkata")},
+
+    {"name":"Kolkata Police Museum", "lat":22.5740, "lon":88.3680, "duration":1.0,
+     "description":"Museum showcasing Kolkata Police’s history and archives.",
+     "tags":["historical","cultural"],
+     "image": placeholder_image_url("Kolkata Police Museum")},
+
+    {"name":"Smaranika Tram Museum", "lat":22.5625, "lon":88.3510, "duration":1.0,
+     "description":"Unique museum dedicated to Kolkata’s historic trams.",
+     "tags":["historical","cultural"],
+     "image": placeholder_image_url("Smaranika Tram Museum Kolkata")},
+
+    {"name":"Science Exploratorium", "lat":22.5456, "lon":88.3632, "duration":2.0,
+     "description":"Hands-on science learning center for children.",
+     "tags":["educational","family"],
+     "image": placeholder_image_url("Science Exploratorium Kolkata")}
+],
         "Darjeeling": [
             {"name":"Tiger Hill", "lat":27.4189, "lon":88.2790, "duration":1.5, "description":"Sunrise views over Kanchenjunga.", "tags":["romantic","nature"], "image": placeholder_image_url("Tiger Hill Darjeeling")},
             {"name":"Darjeeling Toy Train", "lat":27.0380, "lon":88.2627, "duration":2.5, "description":"Heritage steam/rail experience.", "tags":["relaxation","family"], "image": placeholder_image_url("Toy Train Darjeeling")},
