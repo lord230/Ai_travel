@@ -241,7 +241,7 @@ else:
                 st.pydeck_chart(pdk.Deck(
                     layers=[
                         pdk.Layer("PathLayer", [{"path": df_map[["lon", "lat"]].values.tolist()}], get_path="path", get_color=[0, 120, 200], width_min_pixels=3),
-                        pdk.Layer("ScatterplotLayer", df_map, get_position=["lon", "lat"], get_radius=200, get_fill_color=[255, 100, 100], pickable=True),
+                        pdk.Layer("ScatterplotLayer", df_map, get_position=["lon", "lat"], get_radius=10, get_fill_color=[255, 100, 100], pickable=True),
                         pdk.Layer("TextLayer", df_map, get_position=["lon", "lat"], get_text="label", get_size=14, get_color=[255, 255, 255], get_alignment_baseline="'bottom'"),
                     ],
                     initial_view_state=view_state, tooltip={"html": "<b>{name}</b>"}
