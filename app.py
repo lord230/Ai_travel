@@ -138,7 +138,7 @@ def generate_itinerary(
 # SIDEBAR & REACTIVE LOGIC
 # ------------------------------
 with st.sidebar:
-    st.title("🤖 AI Tour Guide")
+    st.title("AI Tour Guide")
     st.markdown("Your trip plan updates automatically as you make changes.")
     
     selected_state = st.selectbox("State", list(POIS_BY_STATE.keys()))
@@ -199,7 +199,21 @@ else:
         else:
             for idx, poi in enumerate(day_acts):
                 card_key = f"day{st.session_state.selected_day}_item{idx}"
-                st.markdown("<div class='card'>", unsafe_allow_html=True)
+
+                # Alternate background color
+                card_color = "#2E2E2E" if idx % 2 == 0 else "#3C3C3C"
+
+                # Open card
+                # st.markdown(
+                #     f"""
+                #     <div style="background-color:{card_color};
+                #                 padding:20px; border-radius:12px;
+                #                 margin-bottom:20px; box-shadow:0px 4px 8px rgba(0,0,0,0.3);">
+                #     """,
+                #     unsafe_allow_html=True
+                # )
+
+                # Card content
                 c1, c2, c3 = st.columns([1.5, 3.5, 0.8])
                 with c1:
                     st.image(poi.get("image", placeholder_image_url(poi["name"])), width=160)
@@ -207,10 +221,19 @@ else:
                     st.subheader(poi["name"])
                     tags = poi.get("tags", [])
                     if tags:
-                        tag_html = "".join([f"<span class='tag-pill'>{tag.capitalize()}</span>" for tag in tags])
+                        tag_html = "".join(
+                            [f"<span class='tag-pill' style='margin:2px; padding:3px 8px; border-radius:8px; background:#444; color:white; font-size:12px;'>{tag.capitalize()}</span>" for tag in tags]
+                        )
                         st.markdown(tag_html, unsafe_allow_html=True)
-                    st.markdown(f"<div class='meta' style='margin-top: 8px;'>{poi.get('description','')}</div>", unsafe_allow_html=True)
-                    st.markdown(f"<div class='small'>🕒 <strong>{poi.get('duration',1)} hrs</strong> | ⏰ <strong>{poi.get('start_time','')} - {poi.get('end_time','')}</strong></div>", unsafe_allow_html=True)
+
+                    st.markdown(
+                        f"<div style='margin-top:6px; font-size:18px; color:white;'>{poi.get('description','')}</div>",
+                        unsafe_allow_html=True
+                    )
+                    st.markdown(
+                        f"<div style='margin-top:10px; font-size:15px; color:#ddd;'>🕒 <strong>{poi.get('duration',1)} hrs</strong> | ⏰ <strong>{poi.get('start_time','')} - {poi.get('end_time','')}</strong></div>",
+                        unsafe_allow_html=True
+                    )
                 with c3:
                     if st.button("⬆️", key=f"up_{card_key}", help="Move up"):
                         if idx > 0:
@@ -226,7 +249,12 @@ else:
                         del day_acts[idx]
                         itinerary[st.session_state.selected_day] = recompute_day_times(day_acts, start_time)
                         st.rerun()
+
+                # Close card
                 st.markdown("</div>", unsafe_allow_html=True)
+                st.markdown("<hr style='border:1px solid white; margin:15px 0;'>", unsafe_allow_html=True)
+
+
 
     with col2:
         st.header("Map & Utilities")
